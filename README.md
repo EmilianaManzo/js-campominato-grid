@@ -18,4 +18,5 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 4. creo un ciclo for per creare i quadratini 100 volte. 
 5. creo la funzine di generazione dei quadratini 
 5. al click del bottone apparirà la griglia.
-6. 
+6. nella stessa funzione della creazione dei quadratini ne creo una nuova
+7. all'interno 

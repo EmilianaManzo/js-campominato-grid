@@ -38,4 +38,9 @@ footer{
   text-align: center;
   line-height: 60px;
   font-weight: bolder;
+  cursor: pointer;
+}
+
+.lightblue{
+  background-color: lightblue;
 }
