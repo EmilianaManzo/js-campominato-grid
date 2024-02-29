@@ -58,6 +58,7 @@ function creation (numeroi){
 
 // funzione per il click del bottone per far partire tutto 
 function start (){
+  reset();
   const chooseDif = difficulty.value;
   let numeriContati = 100;
   

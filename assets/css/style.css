@@ -18,6 +18,10 @@ header{
   height: 100px;
 }
 
+header img{
+  width: 100px;
+}
+
 footer{
   height: 80px;
 }
