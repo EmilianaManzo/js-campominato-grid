@@ -1,7 +1,12 @@
 const emContainer = document.querySelector('.em-container');
 const btn = document.getElementById('bottoncino');
+const difficulty = document.querySelector('.difficolta');
+
+
+
 
 reset();
+
 btn.addEventListener('click', start);
 
 
@@ -27,19 +32,22 @@ function creation (numeroi){
   squareC.sqId = numeroi;
 
   squareC.addEventListener('click', function(){
-    /** 
-    metodo classico 
-    if(this.innerHTML === ''){
-      this.innerHTML = this.sqId;
-    }
-    */
+    
+    // metodo classico 
+    // if(this.innerHTML === ''){
+    //   this.innerHTML = this.sqId;
+    // }else if (this.innerHTML = this.sqId){
+    //   this.innerHTML = ''
+    // }
+    
 
     
     // metodo ternario parlante 
-    this.innerHTML === '' ? this.innerHTML = this.sqId :  this.innerHTML === ''; 
+    this.innerHTML === '' ? this.innerHTML = this.sqId :  this.innerHTML = ''; 
 
-    squareC.sqId.classList.toogle('lightblue');
+    this.classList.toggle('lightblue');  
 
+    console.log(this.sqId);
   })
 
 
@@ -50,8 +58,24 @@ function creation (numeroi){
 
 // funzione per il click del bottone per far partire tutto 
 function start (){
-  for (let i = 1; i <= 100; i++){
+  const chooseDif = difficulty.value;
+  let numeriContati = 100;
+  
+  if (chooseDif == 'medium') {
+    numeriContati = 81;
+  }else if (chooseDif == 'hard'){
+    numeriContati = 49;
+  }
+  
+  for (let i = 1; i <= numeriContati; i++){
     const square = creation(i) ;
+
+    if(chooseDif == 'medium'){
+      square.classList.add('sd_medium');
+    }else if (chooseDif == 'hard'){
+      square.classList.add('sd_hard');
+    }
+
     emContainer.append(square);
   }
 

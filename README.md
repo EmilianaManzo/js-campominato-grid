@@ -19,4 +19,6 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 5. creo la funzine di generazione dei quadratini 
 5. al click del bottone apparirà la griglia.
 6. nella stessa funzione della creazione dei quadratini ne creo una nuova
-7. all'interno 
+7. all'interno della nuova funzione al click dell' elemento creo un ciclo if che controlla se all'interno del quadratino è scritto qualcosa e se è vuoto al momento del click scrive il numero corrispondente al numero indice del ciclo for usato per stamparli in pagina.
+
+
