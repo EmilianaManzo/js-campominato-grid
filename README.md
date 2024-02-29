@@ -13,9 +13,9 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 
 # Svolgimento:
 1. creo un un header dove andrà inserito il bottone, un main con un contenitore per i quadratini e un footer 
-2. importo il contenitore in js
-3. creo una funzione reset 
-4. creo una funzione, all'interno della quale creo un ciclo for per creare i quadratini 100 volte. 
+2. importo il contenitore e il bottone in js
+3. creo una funzione reset che sarà il primo elemento effettivo del codice.
+4. creo un ciclo for per creare i quadratini 100 volte. 
+5. creo la funzine di generazione dei quadratini 
 5. al click del bottone apparirà la griglia.
 6. 
-. 
